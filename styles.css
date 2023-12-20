@@ -1,26 +1,26 @@
 /*  your css code here. If applicable */
-.grid {
+#grid {
 	display:grid;
 	border: 1px solid yellow;
 	grid-template-rows: repeat(5, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	gap: 6px;
 }
-.grid div {
+#grid div {
 	background: green;
 	color: white;
 	font-size: 4vw;
 }
-.first {
+#grid div:nth-child(1) {
 	grid-column : span 4;
 }
-.second {
+#grid div:nth-child(2) {
 	grid-row : span 5;
 }
 
-.forth, .fifth {
+#grid div:nth-child(4), .#grid div:nth-child(5) {
 	grid-column : span 2;
 }
-.tenth {
+#grid div:nth-child(10) {
 	grid-column : span 3;
 }
